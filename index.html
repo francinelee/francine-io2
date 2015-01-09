@@ -82,20 +82,23 @@
 
     /* Layout dimensions and positioning */
     .pane {
-      width: 40%;
+      width: 48%;
       display: inline-block;
       vertical-align: top;
+    }
+    .pane .inner {
       padding: 0px 70px 0px 40px;
     }
-    @media all and (max-width: 770px) {
+    @media all and (max-width: 1000px) {
       .pane {
         display: block;
         width: 100%;
       }
-    }
-    @media all and (min-width: 770px) and (max-width: 1200px) {
-      .pane {
-        width: 50%;
+      .pane .inner {
+        padding: 0px;
+      }
+      #banner {
+        margin-left: 10px;
       }
     }
   </style>
@@ -106,95 +109,99 @@
   </div>
 
   <div class="project-wrap pane">
-    <h1 class="headline">PROJECTS</h1>
+    <div class="inner">
+      <h1 class="headline">PROJECTS</h1>
 
-    <div class="section">
-      <h2>Reimagining Dropbox Photos</h2>
-      <h3>Research + UX + Visual</h3>
-      <p>
-        This <a href="https://medium.com/user-experience-researche/e6a1e37028b4">process post</a> reimagines the Dropbox Photos experience in a full design cycle: user research, to experience design, to UI prototyping. 
-      </p>
-      <p>Featured in Fast.Co Design, Smashing Magazine, Sidebar.io, and Medium's Top 100. 
-      </p>
-    </div>
+      <div class="section">
+        <h2>Reimagining Dropbox Photos</h2>
+        <h3>Research + UX + Visual</h3>
+        <p>
+          This <a href="https://medium.com/user-experience-researche/e6a1e37028b4">process post</a> reimagines the Dropbox Photos experience in a full design cycle: user research, to experience design, to UI prototyping. 
+        </p>
+        <p>Featured in Fast.Co Design, Smashing Magazine, Sidebar.io, and Medium's Top 100. 
+        </p>
+      </div>
 
-    <div class="section">
-      <h2>Dropbox's Core Features</h2>
-      <h3>Research</h3>
-      <p>
-        At Dropbox, I managed research for our Search, Sharing, and growth campaigns. I'd draft research plans based off of project hypothesis, execute the best methodology given the constraints and research goal, then translate the research to insights.
-      </p>
-      <p>As a new team, we also worked on evangelizing research across the company. This <a href="https://www.dropbox.com/s/9br4t02eq6k3597/2014-10-06%2019.09.46.jpg?dl=0">artifact</a> I designed was the first in a series that showcased our team and product insights.
-      </p>
-    </div>
+      <div class="section">
+        <h2>Dropbox's Core Features</h2>
+        <h3>Research</h3>
+        <p>
+          At Dropbox, I managed research for our Search, Sharing, and growth campaigns. I'd draft research plans based off of project hypothesis, execute the best methodology given the constraints and research goal, then translate the research to insights.
+        </p>
+        <p>As a new team, we also worked on evangelizing research across the company. This <a href="https://www.dropbox.com/s/9br4t02eq6k3597/2014-10-06%2019.09.46.jpg?dl=0">artifact</a> I designed was the first in a series that showcased our team and product insights.
+        </p>
+      </div>
 
-    <div class="section">
-      <h2>Uber x 3 Million</h2>
-      <h3>Research + UX + Visual</h3>
-      <p>
-        I was the sole design resource on a growth campaign team of 6. We created the promotional cards you might see in Uber rides today. 
-      </p>
-      <p>With 3 weeks, we started with an idea, made quick design iterations based on research, and finished with what’s now one of the highest-performing growth campaigns in the company — and 3 million prints of my work adopted across the country. 
-      </p>
-    </div>
+      <div class="section">
+        <h2>Uber x 3 Million</h2>
+        <h3>Research + UX + Visual</h3>
+        <p>
+          I was the sole design resource on a growth campaign team of 6. We created the promotional cards you might see in Uber rides today.
+        </p>
+        <p>With 3 weeks, we started with an idea, made quick design iterations based on research, and finished with what’s now one of the highest-performing growth campaigns in the company — and 3 million prints of my work adopted across the country.
+        </p>
+      </div>
 
-    <div class="section">
-      <h2>Twitch One-Pager</h2>
-      <h3>UX + Visual</h3>
-      <p>
-        I consulted with the data science team of 4 to design a solution for their recruiting needs. After 2 weeks, we designed and launched a microsite specific to the team
-      </p>
-      <p>It inspired other teams across the company to create their own microsites, and the data science team exceeded their hiring goals by 200%. 
-      </p>
-    </div>
+      <div class="section">
+        <h2>Twitch One-Pager</h2>
+        <h3>UX + Visual</h3>
+        <p>
+          I consulted with the data science team of 4 to design a solution for their recruiting needs. After 2 weeks, we designed and launched a microsite specific to the team
+        </p>
+        <p>It inspired other teams across the company to create their own microsites, and the data science team exceeded their hiring goals by 200%.
+        </p>
+      </div>
 
-    <div class="section">
-      <h2>Side Thrills</h2>
-      <h3>UX + Visual + HTML/CSS</h3>
-      <p>
-        Throwback to the first website I hacked together during a college break: <a href="http://www.willworkforamac.com">www.willworkforamac.com</a>, a social experiment + coding challenge in fundraising for my first Macbook. Definitely not responsive.
-      </p>
-      <p>I later learned the convenience of frameworks like Bootstrap and Bourbon/Neat while winning an education hackathon with a mentorship concept, and Yammer's Enterprise Hackathon with a <a href="http://challengepost.com/software/visualizr_r-io">data visualization app</a>. 
-      </p>
+      <div class="section">
+        <h2>Side Thrills</h2>
+        <h3>UX + Visual + HTML/CSS</h3>
+        <p>
+          Throwback to the first website I hacked together during a college break: <a href="http://www.willworkforamac.com">www.willworkforamac.com</a>, a social experiment + coding challenge in fundraising for my first Macbook. Definitely not responsive.
+        </p>
+        <p>I later learned the convenience of frameworks like Bootstrap and Bourbon/Neat while winning an education hackathon with a mentorship concept, and Yammer's Enterprise Hackathon with a <a href="http://challengepost.com/software/visualizr_r-io">data visualization app</a>.
+        </p>
+      </div>
     </div>
 
   <!-- don't touch the following line; it's important to not have space between div tags! -->
   </div><div class="connect-wrap pane">
-    <h1 class="headline">CONNECT</h1>
+    <div class="inner">
+      <h1 class="headline">CONNECT</h1>
 
-    <div class="section">
-      <h2>Manifesto</h2>
-      <ol>
-       <li>People</li>
-       <li>Learning</li>
-      </ol>
-      <p>
-        I was disenchanted with what I studied in school, and finished that early to pick up design on my own. Self-studying was unglamorous for awhile, but I had tons of help from a few mentors and the vastness of the Internet (Photoshop tutorials on Youtube!). I'm amazed that so many people freely share and create knowledge on the Internet, and that I'm able to learn a craft and a career from it. I want to make that possible for more people! 
-      </p>
-    </div>
+      <div class="section">
+        <h2>Manifesto</h2>
+        <ol>
+         <li>People</li>
+         <li>Learning</li>
+        </ol>
+        <p>
+          I was disenchanted with what I studied in school, and finished that early to pick up design on my own. Self-studying was unglamorous for awhile, but I had tons of help from a few mentors and the vastness of the Internet (Photoshop tutorials on Youtube!). I'm amazed that so many people freely share and create knowledge on the Internet, and that I'm able to learn a craft and a career from it. I want to make that possible for more people!
+        </p>
+      </div>
 
-    <div class="section">
-      <h2>Advising</h2>
-      <p>
-        I've got an open ear to interesting causes, especially in the education space. I mentor at <a href="http://www.trydesignlab.com">DesignLab</a> (an online design course), in "Design 101" and "UX Research and Strategy".
-      </p>
-    </div>
+      <div class="section">
+        <h2>Advising</h2>
+        <p>
+          I've got an open ear to interesting causes, especially in the education space. I mentor at <a href="http://www.trydesignlab.com">DesignLab</a> (an online design course), in "Design 101" and "UX Research and Strategy".
+        </p>
+      </div>
 
-    <div class="section">
-      <h2>Talks/Workshops</h2>
-      <h4>Sharing is a Springboard, Github 2014</h4>
-      <h5>How I was hired from a blog post.</h5>
-      <h4>UX + Visual, <a href="http://thoughtbot.com/taco-tuesdays">Thoughtbot 2014</a></h4>
-      <h5>My <a href="https://www.dropbox.com/s/0swduto3o809zde/ux-visual-process-thoughtbot.pdf?dl=0">research + design process</a>, and my favorite tools for it.</h5>
-      <h4>Quick and Dirty User Research, <a href="http://www.eventbrite.com/e/quick-dirty-user-research-tickets-14705457419?">Parisoma 2015</a></h4>
-      <h5>The value of user research, and some ways you can inject lightweight research to your team.</h5>
-    </div>
+      <div class="section">
+        <h2>Talks/Workshops</h2>
+        <h4>Sharing is a Springboard, Github 2014</h4>
+        <h5>How I was hired from a blog post.</h5>
+        <h4>UX + Visual, <a href="http://thoughtbot.com/taco-tuesdays">Thoughtbot 2014</a></h4>
+        <h5>My <a href="https://www.dropbox.com/s/0swduto3o809zde/ux-visual-process-thoughtbot.pdf?dl=0">research + design process</a>, and my favorite tools for it.</h5>
+        <h4>Quick and Dirty User Research, <a href="http://www.eventbrite.com/e/quick-dirty-user-research-tickets-14705457419?">Parisoma 2015</a></h4>
+        <h5>The value of user research, and some ways you can inject lightweight research to your team.</h5>
+      </div>
 
-        <div class="section">
+      <div class="section">
         <p>francinelee.ivc@gmail.com</p>
         <p><a href="https://dribbble.com/francine">www.dribbble.com/francine<a></p>
         <p><a href="https://twitter.com/___fl">www.twitter.com/___fl</a></p>
-        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
